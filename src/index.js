@@ -1,1 +1,15 @@
 import './styles';
+import './images/Louis-XVI-ATHOS.png';
+import './images/Carl-von-Zeyten.png';
+import './images/collection-2018.jfif';
+import './images/Emporio-Armani-Sportivo.png';
+import './images/Rolex-Oyster-Perpetual.png';
+import './images/U-Boat-Italo-Fontana.png';
+import './images/Gucci-Mens-G.png';
+import './images/ROGER-DUBUIS-Part-1.png';
+import './images/HISTORY-OF-LUXURY-WATCHES-PART-1.png';
+import './images/BIG-AND-BOLD-TISSOT-PRS-516-CHRONOGRAPH.png';
+import './images/Coco-fine-jewely.png';
+import './images/Rolex.png';
+import './images/Brequet.png';
+import './images/Haven.png';
