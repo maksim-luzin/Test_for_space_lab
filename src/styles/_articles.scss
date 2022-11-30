@@ -1,0 +1,112 @@
+.article {
+  width: 98.7vw;
+  height: 28.5rem;
+
+  display: grid;
+  grid-template-columns: [start-picture] 51.51% [end-picture] 7.5521% [start-preview] 32.7083% [end-preview];
+  grid-template-rows: [start] 10.1695% [start-description-title] 4.8729% [end-description-title] 2.9661% [start-description-abstract] fit-content(23%) [end-description-abstract] 5% [start-footer] 9.9576% [end-footer] 1fr [end-picture] 4.6% [end];
+}
+
+.article-preview {
+  grid-column-start: start-picture;
+  grid-column-end: end-picture;
+  grid-row-start: start;
+  grid-row-end: end-picture;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.article-name {
+  grid-column-start: start-preview;
+  grid-column-end: end-preview;
+  grid-row-start: start-description-title;
+  grid-row-end: end-description-title;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1,2778;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.article-abstract {
+  grid-column-start: start-preview;
+  grid-column-end: end-preview;
+  grid-row-start: start-description-abstract;
+  grid-row-end: end-description-abstract;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.article-footer {
+  grid-column-start: start-preview;
+  grid-column-end: end-preview;
+  grid-row-start: start-footer;
+  grid-row-end: end-footer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.hash-tags {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.2778;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 900px) {
+  .articles {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .article {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+  }
+
+  .article-preview {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .articles {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .article,
+  .articles {
+    display: none;
+  }
+}

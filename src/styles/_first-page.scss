@@ -1,0 +1,110 @@
+.first-page {
+  height: 42.1875vw;
+  width: 98.7vw;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5));
+  background-image: url('../images/first-screen.jfif');
+  background-clip: border-box;
+  background-origin: border-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.first-page-content {
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5));
+}
+
+.main-sign {
+  width: calc(300 * 98.7vw /1920);
+  height: calc(300 * 98.7vw /1920);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 4px solid #FFFFFF;
+  margin-bottom: calc(80 * 98.7vw /1920);;
+}
+
+.main-logo {
+  font-family: 'Post No Bills Jaffna', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.5;
+  text-align: center;
+
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.main-city {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 1.667;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.store-list {
+  width: calc(730 * 98.7vw / 1920);
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+  .store-list {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .main-sign {
+    width: calc(400 * 98.7vw /1920);
+    height: calc(400 * 98.7vw /1920);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-sign {
+    width: calc(500 * 98.7vw /1920);
+    height: calc(300 * 98.7vw /1920);
+    border-width: 2px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .store-list {
+    display: none;
+  }
+}

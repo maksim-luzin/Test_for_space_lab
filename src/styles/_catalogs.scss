@@ -1,0 +1,211 @@
+.catalogs {
+  width: 98.7vw;
+  height: calc(1330 * 98.7vw / 1920);
+
+  display: grid;
+  grid-template-columns: [start] calc(936 * 100% / 1920) [end-left-bottom-part] calc(104 * 100% / 1920) [end-left-top-part] calc(880 * 100% / 1920) [end];
+  grid-template-rows: [start-top-part] calc(730 * 100% / 1330) [end-top-part] 0 [start-bottom-part] calc(600 * 100% / 1330) [end-bottom-part];
+}
+
+.left-top-part-catalogs {
+  grid-column-start: start;
+  grid-column-end: end-left-top-part;
+  grid-row-start: start-top-part;
+  grid-row-end: end-top-part;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.collection-name {
+  margin-top: 1.2rem;
+
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 1.3333;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.products {
+  width: calc(879 * 98.7vw / 1920);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.right-top-part-catalogs {
+  grid-column-start: end-left-top-part;
+  grid-column-end: end;
+  grid-row-start: start-top-part;
+  grid-row-end: end-top-part;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+
+  background-image: url('../images/new-collection.jfif');
+  background-clip: border-box;
+  background-origin: border-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.collection-name {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 1.3333;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.navigation-new-collection {
+  width: calc(138 * 98.7vw / 1920);
+  height: calc(47 * 98.7vw / 1920);
+  margin-bottom: 6.3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.2778;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  border: 1px solid #FFFFFF;
+
+  &:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    backdrop-filter: blur(3px);
+  }
+}
+
+.collection-name {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 1.333;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.left-bottom-part-catalogs {
+  grid-column-start: start;
+  grid-column-end: end-left-bottom-part;
+  grid-row-start: start-bottom-part;
+  grid-row-end: end-bottom-part;
+
+  img {
+    width: calc(936 * 98.7vw / 1920);
+    height: calc(600 * 98.7vw / 1920);
+  }
+}
+
+.right-bottom-part-catalogs {
+  grid-column-start: end-left-bottom-part;
+  grid-column-end: end;
+  grid-row-start: start-bottom-part;
+  grid-row-end: end-bottom-part;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.collection-2018 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 1.333;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.watch-store {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.5rem;
+  line-height: 1.5;
+  text-align: center;
+
+  margin-bottom: 1rem;
+
+  width: 32.7083vw;
+}
+
+.navigation-catalog {
+  height: 2.938rem;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.2778;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  white-space: nowrap;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6061vw 1.75rem;
+  gap: 10px;
+
+  &:hover {
+    text-decoration: none;
+    color: #969696;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .catalogs {
+    width: 98.7vw;
+    height: 100%;
+
+    display: block;
+  }
+
+  .left-bottom-part-catalogs,
+  .left-top-part-catalogs {
+    display: none;
+  };
+
+  .right-top-part-catalogs {
+    height: calc(880 * 100vw / 1330);
+  }
+
+  .right-top-part-catalogs {
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+  }
+
+  .watch-store {
+    width: 90%;
+    padding: 2rem 0;
+  }
+}

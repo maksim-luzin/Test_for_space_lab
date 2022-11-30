@@ -1,0 +1,132 @@
+.new-collection {
+  height: 67.1354vw;
+  width: 98.7vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection-name {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 1.3333;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.new-collection-preview {
+  max-width: 57.2917vw;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.view-new-catalog {
+  width: calc(260 * 98.7vw / 1920);
+  height: calc(405 * 98.7vw / 1920);
+}
+
+.new-catalog {
+  background-image: url('../images/JORD-AR5905.png');
+  background-clip: border-box;
+  background-origin: border-box;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navigation-new-catalog {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(25, 27, 28, 0.5);
+
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 28px;
+    gap: 10px;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.3333;
+    text-align: center;
+    color: #FFFFFF;
+    white-space: nowrap;
+    border: 1px solid #FFFFFF;
+
+    &:hover {
+      text-decoration: none;
+      color: #969696;
+      border-color: #969696;
+    }
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .new-collection {
+    margin-top: 3rem;
+  }
+
+  .new-collection-preview {
+    max-width: 65%;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .new-collection-preview {
+    max-width: 67%;
+  }
+
+  .navigation-new-collection {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .new-collection-preview {
+    max-width: 69%;
+  }
+
+    .navigation-new-catalog {
+      width: 25rem;
+      a {
+        font-size: 0.8rem;
+      }
+    }
+}
+
+@media screen and (max-width: 770px) {
+  .new-collection-preview {
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .new-collection {
+    height: min-content;
+  }
+  .new-collection-preview {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .new-collection-preview {
+    max-width: 70%;
+  }
+}
+

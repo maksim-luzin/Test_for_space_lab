@@ -1,0 +1,23 @@
+html {
+  font-size: calc(16 * 98.7vw / 1920);
+}
+
+body {
+  background-color: #000;
+  color: #FFFFFF;
+}
+
+.dividing-line {
+  width: calc(120 * 98.7vw / 1920);
+  height: 0;
+  border-bottom: 1px solid #FFFFFF;
+
+  margin-top: calc(30 * 98.7vw / 1920);
+  margin-bottom: calc(30 * 98.7vw / 1920);
+}
+
+.center-page-line {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.5rem;
+}
